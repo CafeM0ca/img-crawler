@@ -2,4 +2,4 @@
 
 naver cafe img crawling
 
-no capyright. just free
+no copyright. just free
