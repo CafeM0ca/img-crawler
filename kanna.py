@@ -1,4 +1,5 @@
-# -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*-
+#naver kanna fancafe img-crawling
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import urllib
@@ -35,10 +36,10 @@ def NextPage(url,page,num):
 nid = raw_input("ID: ")
 npw = getpass.getpass("PW is blinding : ")
 print "wait. . ."
-driver = webdriver.Chrome('/home/moca/coding/python/chromedriver')
+driver = webdriver.Chrome('~./') # add chromdirver route
 driver.implicitly_wait(1)
 
-#id/pw sned
+#id/pw send if you'r not cafe member, you can't
 driver.get('https://nid.naver.com/nidlogin.login')
 driver.find_element_by_name('id').send_keys(nid)
 driver.find_element_by_name('pw').send_keys(npw)
