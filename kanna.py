@@ -57,12 +57,12 @@ if p <= 0:
 n=1
 NextPage(url,p,n)
 
-#현재 디렉토리에 ./kanna 만들기 
-if not os.path.isdir('./kanna'):
-    print "현재 디렉토리에 /kanna를 생성합니다."
-    os.mkdir('./kanna')
+#현재 디렉토리에 ./I_M_G 만들기 
+if not os.path.isdir('./I_M_G'):
+    print "현재 디렉토리에 /I_M_G를 생성합니다."
+    os.mkdir('./I_M_G')
 n=0
-print os.getcwd()+"./kanna <-에 저장"
+print os.getcwd()+"./I_M_G <-에 저장"
 print "저장중 . . ."
 
 for image in image_url:    
