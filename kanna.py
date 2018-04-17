@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-#naver kanna fancafe img-crawling
+# -*- coding: utf-8 -*- 
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import urllib
@@ -33,13 +32,14 @@ def NextPage(url,page,num):
     NextPage(url,page+1,num)
         
 
+print "하시모토 칸나 덕질을 위한 이미지 크롤러 )제작자 탈덕했습니다."
 nid = raw_input("ID: ")
 npw = getpass.getpass("PW is blinding : ")
 print "wait. . ."
-driver = webdriver.Chrome('~./') # add chromdirver route
+driver = webdriver.Chrome('/home/moca/coding/python/chromedriver')
 driver.implicitly_wait(1)
 
-#id/pw send if you'r not cafe member, you can't
+#id/pw sned
 driver.get('https://nid.naver.com/nidlogin.login')
 driver.find_element_by_name('id').send_keys(nid)
 driver.find_element_by_name('pw').send_keys(npw)
@@ -57,12 +57,12 @@ if p <= 0:
 n=1
 NextPage(url,p,n)
 
-#현재 디렉토리에 ./I_M_G 만들기 
-if not os.path.isdir('./I_M_G'):
-    print "현재 디렉토리에 /I_M_G를 생성합니다."
-    os.mkdir('./I_M_G')
+#현재 디렉토리에 ./kanna 만들기 
+if not os.path.isdir('./kanna'):
+    print "현재 디렉토리에 /kanna를 생성합니다."
+    os.mkdir('./kanna')
 n=0
-print os.getcwd()+"./I_M_G <-에 저장"
+print os.getcwd()+"./kanna <-에 저장"
 print "저장중 . . ."
 
 for image in image_url:    
