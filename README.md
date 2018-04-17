@@ -9,7 +9,7 @@
 3. 네이버 계정
 
 실행
-1. ***python kanna.py
+1. python kanna.py
 2. 네이버 ID,PW입력
 3. url은 카페에서 갤러리 위치인데 1 입력 권장
 4. 열심히 기다린다.
