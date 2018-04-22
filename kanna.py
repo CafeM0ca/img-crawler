@@ -33,6 +33,7 @@ def NextPage(url,page,num):
         
 
 print "하시모토 칸나 덕질을 위한 이미지 크롤러 )제작자 탈덕했습니다."
+print "***카페 회원이시면 더 많은 사진을 수집하실 수 있습니다."
 nid = raw_input("ID: ")
 npw = getpass.getpass("PW is blinding : ")
 print "wait. . ."
